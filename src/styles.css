@@ -1,0 +1,148 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#121212, #212b46);
+}
+
+.title {
+    font-size: 80px;
+    color: #fffffff1;
+}
+
+.containerInput {
+    background-color: rgba(0, 0, 0, 0.26);
+    padding: 15px;
+    margin: 34px 0;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.623);
+}
+
+.containerInput input {
+    background-color: transparent;
+    border: 0;
+    font-size: 16px;
+    color: #fffffff1;
+    outline: none;
+    margin-right: 8px;
+}
+
+.containerInput input::placeholder {
+    color: #ffffff88;
+}
+
+.buttonSearch {
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+    .buttonSearch:hover {
+        transform: scale(1.3);
+    }
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.26);
+    border-radius: 8px;
+    width: 400px;
+    transition: transform 0.3s;
+}
+
+    .main:hover{
+        transform: scale(1.1);
+    }
+
+.main h2 {
+    margin: 10px;
+    font-size: 30px;
+    color: #fffffff1;
+}
+
+.main span {
+    margin-bottom: 10px;
+    color: #ffffff88;
+}
+
+.location-pin-icon {
+    width: 120px;
+    height: 120px;
+    color: #fffffff1;
+    margin-top: 40px;
+    transition: transform 0.7s;
+  }
+
+  .location-pin-icon:hover {
+    transform: rotateY(180deg);
+  }
+
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 60px;
+        animation: decreaseFontSize 0.5s;
+    }
+    
+    .main {
+        width: 80%;
+        animation: decreaseMainSize 0.5s ;
+    }
+}
+
+@media (min-width: 600px) {
+    .title {
+        font-size: 80px;
+        animation: increaseFontSize 0.5s;
+    }
+
+    .main {
+        width: 400px;
+        animation: increaseMainSize 0.5s ;
+    }
+}
+
+@keyframes decreaseFontSize {
+    from {
+        font-size: 80px;
+    }
+    to {
+        font-size: 60px;
+    }
+}
+
+@keyframes increaseFontSize {
+    from {
+        font-size: 60px;
+    }
+    to {
+        font-size: 80px;
+    }
+}
+
+@keyframes decreaseMainSize {
+    from {
+        width: 400px;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+@keyframes increaseMainSize {
+    from {
+        width: 80%px;
+    }
+    to {
+        width: 400px;
+    }
+}
