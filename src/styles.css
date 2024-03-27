@@ -108,7 +108,7 @@
     opacity: .9;
     background-repeat: repeat-x;
     background-position: center 10%;
-    backdrop-filter: brightness(80%) saturate(120%);
+
   }
 
 @keyframes moveBefore {
