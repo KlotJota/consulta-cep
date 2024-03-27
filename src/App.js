@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FiSearch, FiMapPin } from 'react-icons/fi';
+import { FiSearch } from 'react-icons/fi';
 import './styles.css';
 
 import api from './services/api'
@@ -53,11 +53,13 @@ function App() {
           <span>{cep.localidade} - {cep.uf}</span>
 
         </main> 
+        
       )}
 
-      <div><FiMapPin className="location-pin-icon" /></div>
+    <div className="city"></div>
 
     </div>
+    
   );
 }
 
