@@ -1,4 +1,4 @@
-Consulta CEP — Breve Descrição
+**Consulta CEP**
 
 Projeto simples e funcional que permite ao usuário consultar os detalhes de um CEP (Código de Endereçamento Postal) utilizando a API pública ViaCEP. A aplicação foi desenvolvida em React, com foco em clareza, boa experiência de uso e simplicidade arquitetural.
 
